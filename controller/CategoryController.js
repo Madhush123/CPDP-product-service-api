@@ -34,7 +34,7 @@ const createCategory= async (request,response)=>{
         });
 
      const saveData= await category.save();
-       return response.status(201).json({code:201,message:'customer has been saved...',data:saveData});
+       return response.status(201).json({code:201,message:'category has been saved...',data:saveData});
 
     }catch (e){
         response.status(500).json({code:500,message:'something went wrong...',error:e});
@@ -43,8 +43,26 @@ const createCategory= async (request,response)=>{
 }
 
 //update(PUT)
-const updateCategory= (request,response)=>{
-    console.log(request.body);
+const updateCategory=async (request,response)=>{
+    try{
+
+        const {categoryName}=request.body;
+        if(!categoryName ){
+            return response.status(400).json({code:400,message:'some fields are !...',data:null});
+        }
+
+       const updateData=await CategorySchema.findOneAndUpdate({'_id':request.params.id},{
+            $set:{
+                categoryName:categoryName
+            }
+        },{new:true});
+
+        return response.status(200).json({code:201,message:'category has been updated...',data:updateData});
+
+    }catch (e){
+        response.status(500).json({code:500,message:'something went wrong...',error:e});
+    }
+
 }
 
 //delete(DELETE)
