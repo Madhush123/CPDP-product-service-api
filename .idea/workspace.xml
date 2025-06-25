@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4997bb5-09cb-41ee-9e90-afed8b4f7f77" name="Changes" comment="" />
+    <list default="true" id="e4997bb5-09cb-41ee-9e90-afed8b4f7f77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/CategoryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CategoryController.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +49,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/CSDP/API/product-service-api",
     "node.js.detected.package.eslint": "true",
@@ -78,7 +82,7 @@
       <workItem from="1750821780802" duration="69000" />
       <workItem from="1750841302822" duration="1230000" />
       <workItem from="1750869116894" duration="1519000" />
-      <workItem from="1750870684011" duration="368000" />
+      <workItem from="1750870684011" duration="2612000" />
     </task>
     <servers />
   </component>
