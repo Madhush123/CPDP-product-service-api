@@ -2,34 +2,44 @@ const CategorySchema=require('../model/CategorySchema');
 const {request, response} = require("express");
 
 //save(POST)
-const createCategory= (request,response)=>{
-   const category=new CategorySchema({
-       //client side must send the file resource
-       //you must upload the icon into the s3 bucket and then you can get the response body.
+const createCategory= async (request,response)=>{
 
-       //the client send the ids of all the available countries,and the system must find all the countries for the request
-       categoryName:request.body.categoryName,
-       icon:{hash:'Temp Hash',
-           resourceUrl:'https://th.bing.com/th/id/R.50db25605239dc4432bc8a94c7df714e?rik=QSkLYIE5itsxeA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-IsGPbs7AWTA%2fUIwLZkzBCoI%2fAAAAAAAAAN0%2ffUiPlUjLNXI%2fs1600%2fSiberian%2bHusky%2bpuppy.jpg&ehk=7SLje4ISo003I9p2s8ZyA0eFKmlTCzuqVZeuXhVs9dA%3d&risl=&pid=ImgRaw&r=0',
-           filename:'Temp File Name',
-           directory:'Temp Directory'},//assume that you have send the image to the s3
-       availableCountries:[
-           {
-               countryId:'Temp-Id-1',
-               countryName:'Sri Lanka'
-           },
-           {
-               countryId:'Temp-Id-2',
-               countryName:'USA'
-           }
-       ]
-   });
-   category.save()
-       .then(result=>{
-            response.status(201).json({code:201,message:'customer has been saved...',data:null});
-    }).catch(error=>{
-       response.status(500).json({code:500,message:'something went wrong...',error:error});
-    })
+    try{
+
+        const {categoryName,file,countryIds}=request.body;
+        if(!categoryName || !file || !countryIds){
+            return response.status(400).json({code:400,message:'some fields are !...',data:null});
+        }
+
+        const category=new CategorySchema({
+            //client side must send the file resource
+            //you must upload the icon into the s3 bucket and then you can get the response body.
+
+            //the client send the ids of all the available countries,and the system must find all the countries for the request
+            categoryName:categoryName,
+            icon:{hash:'Temp Hash',
+                resourceUrl:'https://th.bing.com/th/id/R.50db25605239dc4432bc8a94c7df714e?rik=QSkLYIE5itsxeA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-IsGPbs7AWTA%2fUIwLZkzBCoI%2fAAAAAAAAAN0%2ffUiPlUjLNXI%2fs1600%2fSiberian%2bHusky%2bpuppy.jpg&ehk=7SLje4ISo003I9p2s8ZyA0eFKmlTCzuqVZeuXhVs9dA%3d&risl=&pid=ImgRaw&r=0',
+                filename:'Temp File Name',
+                directory:'Temp Directory'},//assume that you have send the image to the s3
+            availableCountries:[
+                {
+                    countryId:'Temp-Id-1',
+                    countryName:'Sri Lanka'
+                },
+                {
+                    countryId:'Temp-Id-2',
+                    countryName:'USA'
+                }
+            ]
+        });
+
+     const saveData= await category.save();
+       return response.status(201).json({code:201,message:'customer has been saved...',data:saveData});
+
+    }catch (e){
+        response.status(500).json({code:500,message:'something went wrong...',error:e});
+    }
+
 }
 
 //update(PUT)
