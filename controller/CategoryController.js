@@ -1,5 +1,4 @@
 const CategorySchema=require('../model/CategorySchema');
-const {request, response} = require("express");
 
 //save(POST)
 const createCategory= async (request,response)=>{
@@ -8,7 +7,7 @@ const createCategory= async (request,response)=>{
 
         const {categoryName,file,countryIds}=request.body;
         if(!categoryName || !file || !countryIds){
-            return response.status(400).json({code:400,message:'some fields are !...',data:null});
+            return response.status(400).json({code:400,message:'some fields are missing!...',data:null});
         }
 
         const category=new CategorySchema({
@@ -43,12 +42,12 @@ const createCategory= async (request,response)=>{
 }
 
 //update(PUT)
-const updateCategory=async (request,response)=>{
+const updateCategory =async (request,response)=>{
     try{
 
         const {categoryName}=request.body;
         if(!categoryName ){
-            return response.status(400).json({code:400,message:'some fields are !...',data:null});
+            return response.status(400).json({code:400,message:'some fields are missing!...',data:null});
         }
 
        const updatedData=await CategorySchema.findOneAndUpdate({'_id':request.params.id},{
@@ -70,7 +69,7 @@ const deleteCategory=async (request,response)=>{
     try{
 
         if(!request.params.id ){
-            return response.status(400).json({code:400,message:'some fields are !...',data:null});
+            return response.status(400).json({code:400,message:'some fields are missing!...',data:null});
         }
 
         const deletedData=await CategorySchema.findOneAndDelete({'_id':request.params.id});
@@ -87,7 +86,7 @@ const findCategoryById=async (request,response)=>{
     try{
 
         if(!request.params.id ){
-            return response.status(400).json({code:400,message:'some fields are !...',data:null});
+            return response.status(400).json({code:400,message:'some fields are missing!...',data:null});
         }
 
         const categoryData=await CategorySchema.findById({'_id':request.params.id});

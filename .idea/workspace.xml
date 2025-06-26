@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4997bb5-09cb-41ee-9e90-afed8b4f7f77" name="Changes" comment="2">
+      <change afterPath="$PROJECT_DIR$/controller/CountryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/DiscountController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/CountrySchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/DiscountSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route/CountryRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route/DiscountRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/CategoryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CategoryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +47,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2yxueTbddCFtcMErUIkmpRkGEFP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,10 +58,11 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/CSDP/API/product-service-api",
+    "last_opened_file_path": "C:/CSDP/API/product-service-api/route",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,6 +73,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\CSDP\API\product-service-api\route" />
+      <recent name="C:\CSDP\API\product-service-api\controller" />
+      <recent name="C:\CSDP\API\product-service-api\model" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +100,9 @@
       <workItem from="1750821780802" duration="69000" />
       <workItem from="1750841302822" duration="1230000" />
       <workItem from="1750869116894" duration="1519000" />
-      <workItem from="1750870684011" duration="10517000" />
+      <workItem from="1750870684011" duration="10569000" />
+      <workItem from="1750946904205" duration="617000" />
+      <workItem from="1750964251611" duration="4098000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -117,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750877290095</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2">
+      <option name="closed" value="true" />
+      <created>1750881225375</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750881225375</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
