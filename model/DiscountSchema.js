@@ -18,4 +18,4 @@ const DiscountSchema
         type:Date
     },
 });
-module.exports=mongoose.model('category',DiscountSchema);
+module.exports=mongoose.model('discount',DiscountSchema);
