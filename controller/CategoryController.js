@@ -121,7 +121,7 @@ const findAllCategories=async (request,response)=>{
           .limit(pageSize)
           .skip(skip);
 
-      const categoryListCount=await CategorySchema.countDocuments(query)
+      const categoryListCount=await CategorySchema.countDocuments(query);
 
       return response.status(200).json({code:200,message:'categories data found ...',data:{list:categoryList,dataCount:categoryListCount} });
 

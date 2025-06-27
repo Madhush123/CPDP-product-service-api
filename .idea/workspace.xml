@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4997bb5-09cb-41ee-9e90-afed8b4f7f77" name="Changes" comment="2">
+    <list default="true" id="e4997bb5-09cb-41ee-9e90-afed8b4f7f77" name="Changes" comment="3">
+      <change afterPath="$PROJECT_DIR$/controller/BookmarkController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/CartController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ProductController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ReviewController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/BookmarkSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/CartSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/ProductSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/ReviewSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route/BookmarkRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route/CartRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route/ProductRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/route/ReviewRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/DiscountSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/DiscountSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/CategoryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CategoryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/CountryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CountryController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/DiscountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/DiscountController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +110,8 @@
       <workItem from="1750869116894" duration="1519000" />
       <workItem from="1750870684011" duration="10569000" />
       <workItem from="1750946904205" duration="617000" />
-      <workItem from="1750964251611" duration="4384000" />
+      <workItem from="1750964251611" duration="5085000" />
+      <workItem from="1751012218732" duration="7553000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -145,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750968441106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="3">
+      <option name="closed" value="true" />
+      <created>1750968699856</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750968699856</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +181,19 @@
     </ignored-roots>
     <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controller/ProductController.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -112,7 +112,7 @@ const findAllDiscounts=async (request,response)=>{
           .limit(pageSize)
           .skip(skip);
 
-      const discountListCount=await DiscountSchema.countDocuments(query)
+      const discountListCount=await DiscountSchema.countDocuments(query);
 
       return response.status(200).json({code:200,message:'discounts data found ...',data:{list:discountList,dataCount:discountListCount} });
 

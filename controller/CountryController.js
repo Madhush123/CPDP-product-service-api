@@ -113,7 +113,7 @@ const findAllCountries=async (request,response)=>{
           .limit(pageSize)
           .skip(skip);
 
-      const countryListCount=await CountrySchema.countDocuments(query)
+      const countryListCount=await CountrySchema.countDocuments(query);
 
       return response.status(200).json({code:200,message:'contries data found ...',data:{list:countryList,dataCount:countryListCount} });
 
