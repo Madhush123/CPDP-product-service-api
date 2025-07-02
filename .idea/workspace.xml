@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4997bb5-09cb-41ee-9e90-afed8b4f7f77" name="Changes" comment="3">
-      <change afterPath="$PROJECT_DIR$/controller/BookmarkController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/CartController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/ProductController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/ReviewController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/BookmarkSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/CartSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/ProductSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/ReviewSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route/BookmarkRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route/CartRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route/ProductRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route/ReviewRoute.js" afterDir="false" />
+    <list default="true" id="e4997bb5-09cb-41ee-9e90-afed8b4f7f77" name="Changes" comment="4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CategoryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CategoryController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/CountryController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/CountryController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/DiscountController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/DiscountController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +49,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/CSDP/API/product-service-api/route",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/CSDP/API/product-service-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\CSDP\API\product-service-api\route" />
@@ -111,7 +98,12 @@
       <workItem from="1750870684011" duration="10569000" />
       <workItem from="1750946904205" duration="617000" />
       <workItem from="1750964251611" duration="5085000" />
-      <workItem from="1751012218732" duration="7553000" />
+      <workItem from="1751012218732" duration="9080000" />
+      <workItem from="1751092429072" duration="24000" />
+      <workItem from="1751092601454" duration="860000" />
+      <workItem from="1751094686316" duration="9000" />
+      <workItem from="1751101902737" duration="23000" />
+      <workItem from="1751470580453" duration="958000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -169,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750968699856</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="4">
+      <option name="closed" value="true" />
+      <created>1751020045980</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751020045980</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +182,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,7 +191,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/controller/ProductController.js</url>
           <line>3</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
