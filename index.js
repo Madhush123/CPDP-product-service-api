@@ -2,7 +2,7 @@ const express=require('express');
 const mongoose=require('mongoose');
 require('dotenv').config();
 const bodyParser=require('body-parser');
-const eureka=require('eureka-js-client')
+const Eureka=require('eureka-js-client').Eureka;
 
 const app=express();
 
@@ -19,35 +19,45 @@ const ProductRoute=require("./route/ProductRoute");
 const CartRoute=require("./route/CartRoute");
 const BookmarkRoute=require("./route/BookmarkRoute");
 const ReviewRoute=require("./route/ReviewRoute");
-const {Eureka} = require("eureka-js-client");
 //==================================
-const eurekaClient=new Eureka({
-    instance:{
-        app:'product-service-api',
-        hostName:'localhost',
-        instanceId:'product-service',
-        ipAddr:'127.0.0.1',
-        port:{
-            '$':serverPort,
-            '@enabled':true
+
+
+const eurekaClient = new Eureka({
+    instance: {
+        app: 'product-service-api',
+        instanceId: `product-service-api:${serverPort}`,
+        hostName: 'localhost',
+        ipAddr: '127.0.0.1',
+        port: {
+            '$': parseInt(serverPort),
+            '@enabled': true
         },
-        vipAddress:'',
-        dataCenterInfo:{
-            '@class':'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo',
-            name:'myOwn'
+        vipAddress: 'product-service-api',
+        statusPageUrl: `http://localhost:${serverPort}/info`,         // <-- REQUIRED by Eureka
+        healthCheckUrl: `http://localhost:${serverPort}/health`,      // <-- REQUIRED by Eureka
+        dataCenterInfo: {
+            '@class': 'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo',
+            name: 'MyOwn'  // <-- MUST be "MyOwn", not "myOwn"
         }
     },
-    eureka:{
-        host:'127.0.0.1',
-        port:8761,
-        servicePath:'/eureka/apps/'
+    eureka: {
+        host: '127.0.0.1',
+        port: 8761,
+        servicePath: '/eureka/apps/',
+        registerWithEureka: true,
+        fetchRegistry: false
     }
 });
 
 eurekaClient.start(function (error){
     console.log('#############################');
-    console.log(JSON.stringify(error)||'eureka registration is complete!')
+    console.log(error||'eureka registration is complete!')
 });
+
+
+
+
+
 //==================================
 
 try {
